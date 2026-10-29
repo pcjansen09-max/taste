@@ -15,12 +15,18 @@ learn the decisions, make your own.
 1. **One idea.** Write one sentence: what is the single memorable thing about this brand, and which visual
    decision carries it (a material, a motion, a type voice, a 3D object, a colour world)? Everything else serves it.
    If you cannot say it in one sentence you are about to make a template.
-2. **Pick a voice, then constrain.** Two type families at most (one display, one text; a single family used
-   at two very different sizes also works). One accent colour. Neutrals that are *not* pure white or pure black.
+2. **Pick a voice, then constrain.** Two type families at most (one display, one text; a second *voice* such as mono labels or
+   tabular figures adds the details that feel expensive). The display face is never a system font: self-host an open-licence
+   woff2 (for example Fraunces, Newsreader, Instrument Serif, Geist) with `font-display: swap` and a metric-matched fallback, and
+   screenshot the page with the fallback forced too. Neutrals are not a palette: define three roles (ground, ink, one signal colour),
+   use the signal colour on the first screen, and include at least one tonal block change (a dark or tinted section) so the page
+   has a colour world, not only off-white and black. Keep the signal colour apart from the alert colour (see section 3).
 3. **Fix the rhythm before the content.** An 8 px base; section padding 96 to 140 px on desktop; one content
    container; one grid. Whitespace is the main luxury signal.
 4. **Plan the motion, one hero moment.** Choose exactly one thing that moves with intent (a scroll-linked
    sequence, a 3D/canvas object, a video, a type reveal). Everything else is quiet. Motion explains, it does not decorate.
+   A scroll-driven hero also needs a valid *start state*: judge the screenshot at scroll 0 on its own. If more than a third of the
+   hero area is empty, the first frame must already be a finished composition (the end state dimmed, or an example already drawn).
 5. **Write the copy first**, short and concrete (see "Copy"). Design around real words, never "Lorem" or "Revolutionize your workflow".
 6. **Build, then verify with numbers and eyes** (section 6). Iterate at least twice; the first build is never the one to ship.
 
@@ -73,8 +79,8 @@ effect done with restraint plus a calm layout.
 
 ## 5. Trust and completeness
 
-- If the product touches money, accounts or personal data (banking, payroll, health, identity), the page needs a visible
-  security and integrations block: what access is requested, read-only or not, where data lives, how to revoke. One sentence in
+- If the product touches money, accounts or personal data (banking, payroll, health, identity), the page needs a real
+  Security section (an anchor target with content, not a footer link to nothing) with a visible security and integrations block: what access is requested, read-only or not, where data lives, how to revoke. One sentence in
   a step description is not enough.
 - A complete page has: hero, how it works, the product shown as real UI (drawn in HTML/CSS/SVG or a real screenshot, never
   stock), proof or pricing, one closing call to action, a footer with working links. If a link has no real page yet, drop it.
@@ -95,6 +101,9 @@ One call to action per screen. Microcopy has personality but never jokes at the 
 4. Check accessibility and robustness: contrast 4.5:1 for all text (including small grey labels), visible focus states,
    `prefers-reduced-motion` turns the hero moment into a still, no horizontal scroll at 320 to 1920 px, nothing cut off at 200 % zoom
    or in a 620 px tall window (a pinned hero then becomes a normal section showing the final state), every link and button works.
+   Check it mechanically: list every `href="#..."` and empty `href` in the HTML and compare with the ids that exist; unresolved links must be
+   zero, or the link is removed. A form without a backend says so honestly ("Demo: nothing is sent") or uses a real `mailto:` or endpoint;
+   it never simulates a success.
 5. Ask someone (or another model) who did not build it to compare it to a real high-end site in the same category and say where it falls short. Fix those points and run the check again.
 
 ## 8. Using references
