@@ -114,6 +114,10 @@ One call to action per screen. Microcopy has personality but never jokes at the 
 3b. Finish list: zoom to 300 % on every large amount (the currency sign and the first digit at least 0.08 em apart); test the sticky header over
    every section tint; captions at least 13 px; recompute every displayed difference from the dates and amounts on the page (a weekday that
    does not match the date is the most common slip).
+3c. Fallback and small-screen craft: every fallback mode (reduced motion, no WebGL, no webfonts, no JS) is screenshotted and must match the live
+   composition, with no tag or card covering copy; SVG and chart text stays at least 13 px at 390 px wide (use a narrower viewBox or HTML labels);
+   section headings use `text-wrap: balance` so no heading ends on an orphan word; in a chart, a band and its line use the same geometry (steps with steps);
+   a label never sits on a gridline without a paper halo; a hard cut between two sections is a bug, fade or overlap instead.
 4. Check accessibility and robustness: contrast 4.5:1 for all text (including small grey labels), visible focus states,
    `prefers-reduced-motion` turns the hero moment into a still, no horizontal scroll at 320 to 1920 px, nothing cut off at 200 % zoom
    or in a 620 px tall window (a pinned hero then becomes a normal section showing the final state), every link and button works.

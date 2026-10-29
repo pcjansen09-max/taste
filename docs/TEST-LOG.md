@@ -19,3 +19,13 @@ Not yet verified: motion in a real browser by the critic, pricing and footer, an
 After round 4 the skill is v6 (flat fill is zero material, atmosphere per tonal block, one locked form language, mandatory second voice).
 The critic's own conclusion: more checklists no longer help; the remaining gap is hero material and colour atmosphere, which in practice
 asks for a real canvas or 3D layer. Round 5 has not been run.
+
+## Round 5 (skill v6, Three.js allowed)
+
+The builder made a page with a self-hosted Three.js hero (a lit, grained 3D slab built from the booking data) and all mechanical checks green.
+The sources were lost when the builder's temporary work folder was cleaned up before they were copied out, so this round could not be re-scored
+against the reference. Its own critic (a stricter "award shortlist" scale, so not comparable with the table above) gave 6.5 overall: the hero idea
+was right (relevance 9) but material and light only about 6, fallback modes collided with the copy, chart text became unreadable on mobile, and the
+bottom half looked like a template. Lessons added to the skill as 3c (fallback modes must match the live composition, chart text at least 13 px,
+balanced headings, band and line with the same geometry, no hard cuts). Process lesson: builders must write directly into the main repo path,
+never rely on a temporary work folder.
