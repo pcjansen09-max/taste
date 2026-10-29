@@ -4,3 +4,5 @@ test/
 __pycache__/
 *.pyc
 .claude/
+scripts/bouw_bibliotheek.py
+data/bibliotheek.json
