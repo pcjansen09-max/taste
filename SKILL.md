@@ -22,15 +22,18 @@ learn the decisions, make your own.
    use the signal colour on the first screen, and include at least one tonal block change (a dark or tinted section) so the page
    has a colour world, not only off-white and black. The signal colour is measurable: at least 5 to 10 % of the pixels of the first
    screen, and it returns in at least three sections (not only as a link or a hairline). The tonal block takes a hue from the brand colour
-   (not a neutral near-black), and a second tint for in-between blocks is allowed. Restraint means few colours, not little colour.
+   (not a neutral near-black), and a second tint for in-between blocks is allowed. Every tonal block has its own atmosphere: a gradient out of the brand colour plus grain, or an illustration that runs through the block; a flat fill with only cards on it does not count. One accent word in the headline gets its own colour or gradient treatment. Restraint means few colours, not little colour.
    Keep the signal colour apart from the alert colour (see section 3).
+2b. **Lock one form language.** Choose a radius scale, a button style and a label style and use them everywhere. Test: cover the logo; can you
+   still recognise the brand from a single button? The second voice (mono or tabular figures) is not optional: use it in at least three kinds of
+   UI element (buttons, labels, data). A blue pill button, a rounded card and a soft shadow is the default of every SaaS template, not a signature.
 3. **Fix the rhythm before the content.** An 8 px base; section padding 96 to 140 px on desktop; one content
    container; one grid. Whitespace is the main luxury signal. Every block fills its grid columns or is deliberately aligned; in a sticky
    layout no column or zone larger than 25 % of the viewport stays empty; at 768 px content fills the container width unless a column
    layout deliberately does otherwise; a counter keeps its label on the same baseline (no loose "/ 03" far away). Check at 25, 50 and 75 % scroll.
 4. **Plan the motion, one hero moment.** Choose exactly one thing that moves with intent (a scroll-linked
    sequence, a 3D/canvas object, a video, a type reveal). Everything else is quiet, but quiet is not static: add at least two secondary reveals (a pinned or scroll-linked list, a number that counts, a section transition with a rounded overlap). Motion explains, it does not decorate.
-   The first screen has at least three depth layers (a background world, a main object, a floating detail), and the main object runs off at least two edges of the screen; a centred or boxed object on a flat field counts as one layer. The hero object fills at least half of the first screen and has visible *material*: depth, layered shadow, grain or texture, or
+   The first screen has at least three depth layers (a background world, a main object, a floating detail), and the main object runs off at least two edges of the screen; a centred or boxed object on a flat field counts as one layer. A flat SVG or CSS fill with a gradient counts as zero material. The object has a light source (a highlight side and a shadow side) or visible grain/noise, and at least one real raster, canvas or 3D layer; a chart only counts as an object when it has such light or texture. The hero object fills at least half of the first screen and has visible *material*: depth, layered shadow, grain or texture, or
    movement on load. Memorability test: cover the headline; would someone recognise this screen tomorrow? A flat line chart on a plain
    background only counts if it has a second layer (interactive, animated or layered). A hero that is only a diagram is a document, not a moment.
    A scroll-driven hero also needs a valid *start state*: judge the screenshot at scroll 0 on its own. If more than a third of the
