@@ -20,11 +20,17 @@ learn the decisions, make your own.
    woff2 (for example Fraunces, Newsreader, Instrument Serif, Geist) with `font-display: swap` and a metric-matched fallback, and
    screenshot the page with the fallback forced too. Neutrals are not a palette: define three roles (ground, ink, one signal colour),
    use the signal colour on the first screen, and include at least one tonal block change (a dark or tinted section) so the page
-   has a colour world, not only off-white and black. Keep the signal colour apart from the alert colour (see section 3).
+   has a colour world, not only off-white and black. The signal colour is measurable: at least 5 to 10 % of the pixels of the first
+   screen, and it returns in at least three sections (not only as a link or a hairline). The tonal block takes a hue from the brand colour
+   (not a neutral near-black), and a second tint for in-between blocks is allowed. Restraint means few colours, not little colour.
+   Keep the signal colour apart from the alert colour (see section 3).
 3. **Fix the rhythm before the content.** An 8 px base; section padding 96 to 140 px on desktop; one content
    container; one grid. Whitespace is the main luxury signal.
 4. **Plan the motion, one hero moment.** Choose exactly one thing that moves with intent (a scroll-linked
-   sequence, a 3D/canvas object, a video, a type reveal). Everything else is quiet. Motion explains, it does not decorate.
+   sequence, a 3D/canvas object, a video, a type reveal). Everything else is quiet, but quiet is not static: add at least two secondary reveals (a pinned or scroll-linked list, a number that counts, a section transition with a rounded overlap). Motion explains, it does not decorate.
+   The hero object fills at least half of the first screen and has visible *material*: depth, layered shadow, grain or texture, or
+   movement on load. Memorability test: cover the headline; would someone recognise this screen tomorrow? A flat line chart on a plain
+   background only counts if it has a second layer (interactive, animated or layered). A hero that is only a diagram is a document, not a moment.
    A scroll-driven hero also needs a valid *start state*: judge the screenshot at scroll 0 on its own. If more than a third of the
    hero area is empty, the first frame must already be a finished composition (the end state dimmed, or an example already drawn).
 5. **Write the copy first**, short and concrete (see "Copy"). Design around real words, never "Lorem" or "Revolutionize your workflow".
@@ -71,7 +77,7 @@ effect done with restraint plus a calm layout.
 ## 4. What makes it feel expensive
 
 - **Scale contrast.** Huge type next to small, quiet type. Hierarchy comes from size, not from bold and colour.
-- **Restraint in colour.** One accent used in a few places, so it means something.
+- **A colour world with restraint.** A few colours with enough surface to be remembered; the signal colour appears across the page and means something.
 - **Real content.** Specific numbers, product screenshots that are real UI, a point of view.
 - **Alignment and space.** Consistent left edges, consistent gaps, room around the hero.
 - **Motion with weight.** Expo-out easing, 400 to 800 ms for reveals, staggered 40 to 80 ms per line, scroll-linked only where it explains something.
@@ -98,6 +104,9 @@ One call to action per screen. Microcopy has personality but never jokes at the 
 2. Run `python scripts/extract.py out YOUR_URL` and compare with `data/aggregate.json`: headline vw, weight,
    line-height, section padding, transition ms, easing, fonts per page. Outside the range is allowed only if you can say why.
 3. Check against the anti-slop list item by item.
+3b. Finish list: zoom to 300 % on every large amount (the currency sign and the first digit at least 0.08 em apart); test the sticky header over
+   every section tint; captions at least 13 px; recompute every displayed difference from the dates and amounts on the page (a weekday that
+   does not match the date is the most common slip).
 4. Check accessibility and robustness: contrast 4.5:1 for all text (including small grey labels), visible focus states,
    `prefers-reduced-motion` turns the hero moment into a still, no horizontal scroll at 320 to 1920 px, nothing cut off at 200 % zoom
    or in a 620 px tall window (a pinned hero then becomes a normal section showing the final state), every link and button works.
