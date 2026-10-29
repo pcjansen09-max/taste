@@ -3,3 +3,4 @@ out2/
 test/
 __pycache__/
 *.pyc
+.claude/

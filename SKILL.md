@@ -58,6 +58,9 @@ effect done with restraint plus a calm layout.
 - Animation on everything (parallax on every block, bouncing icons, fade-in on every element).
 - Default `ease`/`linear` transitions; hover states that only change opacity.
 - A hero image or 3D object that has nothing to do with what the product does.
+- Dead ends: a call to action or link that goes nowhere (`href="#"`), a form that does nothing, footer links to pages that do not exist. Every button must work or be removed.
+- An alert colour (red, amber) visible when nothing is wrong. Warning colours appear only where the user must act.
+- Copy that contradicts itself: a weekday that does not match the date, "per studio, not per seat" above prices by headcount, figures that do not add up. Compute every number from one source.
 
 ## 4. What makes it feel expensive
 
@@ -68,21 +71,33 @@ effect done with restraint plus a calm layout.
 - **Motion with weight.** Expo-out easing, 400 to 800 ms for reveals, staggered 40 to 80 ms per line, scroll-linked only where it explains something.
 - **A detail nobody asked for.** One small crafted thing (a custom cursor state, a type detail, a counter that actually counts).
 
-## 5. Copy
+## 5. Trust and completeness
+
+- If the product touches money, accounts or personal data (banking, payroll, health, identity), the page needs a visible
+  security and integrations block: what access is requested, read-only or not, where data lives, how to revoke. One sentence in
+  a step description is not enough.
+- A complete page has: hero, how it works, the product shown as real UI (drawn in HTML/CSS/SVG or a real screenshot, never
+  stock), proof or pricing, one closing call to action, a footer with working links. If a link has no real page yet, drop it.
+- The product's own data can be the hero: a real chart that draws itself beats a decorative blob. Make the hero show what the product knows.
+
+## 6. Copy
 
 Lead with what the product does, for whom, in the customer's words. Verbs and numbers over adjectives.
 One call to action per screen. Microcopy has personality but never jokes at the user's expense.
 
-## 6. Verify (required)
+## 7. Verify (required)
 
 1. Screenshot your build at 1440, 768 and 390 px, at the top and after scrolling to 25, 50, 75 %.
+1b. Fonts: name a fallback stack so the voice survives on every OS (for example a serif display stack plus a system sans), or self-host one open-licence font if the brief allows files.
 2. Run `python scripts/extract.py out YOUR_URL` and compare with `data/aggregate.json`: headline vw, weight,
    line-height, section padding, transition ms, easing, fonts per page. Outside the range is allowed only if you can say why.
 3. Check against the anti-slop list item by item.
-4. Check accessibility: contrast 4.5:1, focus states, `prefers-reduced-motion` turns the hero moment into a still.
+4. Check accessibility and robustness: contrast 4.5:1 for all text (including small grey labels), visible focus states,
+   `prefers-reduced-motion` turns the hero moment into a still, no horizontal scroll at 320 to 1920 px, nothing cut off at 200 % zoom
+   or in a 620 px tall window (a pinned hero then becomes a normal section showing the final state), every link and button works.
 5. Ask someone (or another model) who did not build it to compare it to a real high-end site in the same category and say where it falls short. Fix those points and run the check again.
 
-## 7. Using references
+## 8. Using references
 
 References are links to live sites in the library (not copies). Look at how they solve spacing, type and motion, then
 close the tab and design from the principles. Do not rebuild a reference, and do not reuse its text, images, code or assets.
