@@ -1,0 +1,228 @@
+{
+ "aantal_sites": 46,
+ "h1": {
+  "vw": {
+   "n": 44,
+   "p10": 1.111,
+   "p25": 1.319,
+   "mediaan": 2.546,
+   "p75": 5.208,
+   "p90": 8.194
+  },
+  "px": {
+   "n": 44,
+   "p10": 16,
+   "p25": 19,
+   "mediaan": 36.66,
+   "p75": 75,
+   "p90": 118
+  },
+  "lineheight": {
+   "n": 44,
+   "p10": 0.95,
+   "p25": 1,
+   "mediaan": 1.071,
+   "p75": 1.2,
+   "p90": 1.333
+  },
+  "letterspacing_em": {
+   "n": 44,
+   "p10": -0.022,
+   "p25": -0.01,
+   "mediaan": 0,
+   "p75": 0,
+   "p90": 0.01
+  },
+  "gewicht": {
+   "n": 44,
+   "p10": 300,
+   "p25": 400,
+   "mediaan": 400,
+   "p75": 600,
+   "p90": 700
+  },
+  "woorden": {
+   "n": 44,
+   "p10": 1,
+   "p25": 2,
+   "mediaan": 3,
+   "p75": 6,
+   "p90": 16
+  },
+  "uppercase_aandeel": 0.34
+ },
+ "h2_px": {
+  "n": 107,
+  "p10": 14,
+  "p25": 26,
+  "mediaan": 40,
+  "p75": 56,
+  "p90": 100
+ },
+ "body_px": {
+  "n": 258,
+  "p10": 10,
+  "p25": 13.5,
+  "mediaan": 15,
+  "p75": 19,
+  "p90": 36.66
+ },
+ "body_lineheight": {
+  "n": 247,
+  "p10": 1,
+  "p25": 1.1,
+  "mediaan": 1.25,
+  "p75": 1.4,
+  "p90": 1.538
+ },
+ "contrast": {
+  "n": 45,
+  "p10": 1.0,
+  "p25": 1.16,
+  "mediaan": 2.436,
+  "p75": 7.61,
+  "p90": 14.573
+ },
+ "donker_aandeel": 0.41,
+ "hero_hoogte_vh": {
+  "n": 33,
+  "p10": 0.761,
+  "p25": 1,
+  "mediaan": 1,
+  "p75": 2,
+  "p90": 10.438
+ },
+ "pagina_hoogte_vh": {
+  "n": 46,
+  "p10": 1,
+  "p25": 1,
+  "mediaan": 5.962,
+  "p75": 11.449,
+  "p90": 19.449
+ },
+ "container_aandeel_breedte": {
+  "n": 32,
+  "p10": 0.8,
+  "p25": 0.9,
+  "mediaan": 0.956,
+  "p75": 0.976,
+  "p90": 0.978
+ },
+ "verticale_padding_px": {
+  "n": 76,
+  "p10": 32,
+  "p25": 62,
+  "mediaan": 108,
+  "p75": 135.995,
+  "p90": 180
+ },
+ "transitieduur_ms": {
+  "n": 4015,
+  "p10": 160,
+  "p25": 300,
+  "mediaan": 320,
+  "p75": 500,
+  "p90": 800
+ },
+ "populaire_easing": [
+  [
+   "cubic-bezier(0.4, 0, 0.2, 1)",
+   11
+  ],
+  [
+   "cubic-bezier(0.16, 1, 0.3, 1)",
+   8
+  ],
+  [
+   "cubic-bezier(0.22, 1, 0.36, 1)",
+   4
+  ],
+  [
+   "cubic-bezier(0.23, 1, 0.32, 1)",
+   4
+  ],
+  [
+   "cubic-bezier(0.19, 1, 0.22, 1)",
+   4
+  ],
+  [
+   "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   3
+  ],
+  [
+   "cubic-bezier(0.625, 0.05, 0, 1)",
+   3
+  ],
+  [
+   "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   3
+  ]
+ ],
+ "aantal_lettertypefamilies_per_site": {
+  "n": 46,
+  "p10": 1,
+  "p25": 1,
+  "mediaan": 2,
+  "p75": 2,
+  "p90": 3
+ },
+ "tech_aandeel": {
+  "lenis": 0.54,
+  "webgl": 0.52,
+  "three": 0.43,
+  "gsap": 0.17,
+  "scrolltrigger": 0.13,
+  "webflow": 0.11,
+  "nextjs": 0.09,
+  "splitting": 0.09,
+  "barba": 0.07,
+  "framer": 0.02,
+  "locomotive": 0.02
+ },
+ "canvas_aandeel": 0.65,
+ "video_aandeel": 0.48,
+ "sticky_of_pinned_aandeel": 0.39,
+ "eigen_cursor_aandeel": 0.0,
+ "populaire_fonts": [
+  [
+   "-apple-system",
+   2
+  ],
+  [
+   "GeistSans",
+   2
+  ],
+  [
+   "Times",
+   2
+  ],
+  [
+   "Neue Montreal",
+   2
+  ],
+  [
+   "sans-serif",
+   2
+  ],
+  [
+   "Aeonik",
+   2
+  ],
+  [
+   "BentonSans",
+   1
+  ],
+  [
+   "AftenScreen",
+   1
+  ],
+  [
+   "Ppneuemontreal",
+   1
+  ],
+  [
+   "Ppeiko",
+   1
+  ]
+ ]
+}
