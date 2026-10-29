@@ -11,3 +11,8 @@ award-level sites (computed styles, not screenshots or copied code) plus a desig
 
 Nothing here copies another site's text, images, code or layout. The measurements are facts (sizes, durations, counts).
 MIT licensed.
+
+## Does it work?
+
+See `docs/TEST-LOG.md`: three rounds of "build with the skill, judge against an award-listed site, improve the skill".
+The latest build scored about on par with the reference on stills; it is not yet proven for other site categories.

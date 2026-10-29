@@ -25,10 +25,12 @@ learn the decisions, make your own.
    (not a neutral near-black), and a second tint for in-between blocks is allowed. Restraint means few colours, not little colour.
    Keep the signal colour apart from the alert colour (see section 3).
 3. **Fix the rhythm before the content.** An 8 px base; section padding 96 to 140 px on desktop; one content
-   container; one grid. Whitespace is the main luxury signal.
+   container; one grid. Whitespace is the main luxury signal. Every block fills its grid columns or is deliberately aligned; in a sticky
+   layout no column or zone larger than 25 % of the viewport stays empty; at 768 px content fills the container width unless a column
+   layout deliberately does otherwise; a counter keeps its label on the same baseline (no loose "/ 03" far away). Check at 25, 50 and 75 % scroll.
 4. **Plan the motion, one hero moment.** Choose exactly one thing that moves with intent (a scroll-linked
    sequence, a 3D/canvas object, a video, a type reveal). Everything else is quiet, but quiet is not static: add at least two secondary reveals (a pinned or scroll-linked list, a number that counts, a section transition with a rounded overlap). Motion explains, it does not decorate.
-   The hero object fills at least half of the first screen and has visible *material*: depth, layered shadow, grain or texture, or
+   The first screen has at least three depth layers (a background world, a main object, a floating detail), and the main object runs off at least two edges of the screen; a centred or boxed object on a flat field counts as one layer. The hero object fills at least half of the first screen and has visible *material*: depth, layered shadow, grain or texture, or
    movement on load. Memorability test: cover the headline; would someone recognise this screen tomorrow? A flat line chart on a plain
    background only counts if it has a second layer (interactive, animated or layered). A hero that is only a diagram is a document, not a moment.
    A scroll-driven hero also needs a valid *start state*: judge the screenshot at scroll 0 on its own. If more than a third of the
@@ -104,6 +106,8 @@ One call to action per screen. Microcopy has personality but never jokes at the 
 2. Run `python scripts/extract.py out YOUR_URL` and compare with `data/aggregate.json`: headline vw, weight,
    line-height, section padding, transition ms, easing, fonts per page. Outside the range is allowed only if you can say why.
 3. Check against the anti-slop list item by item.
+3a. Tint changes: the page changes tint at least twice, with a rounded transition or overlap rather than a hard edge. The sticky bar takes the tint of the
+   section below it or has its own opaque background with a border; a light bar over a dark section (or the reverse) is a bug.
 3b. Finish list: zoom to 300 % on every large amount (the currency sign and the first digit at least 0.08 em apart); test the sticky header over
    every section tint; captions at least 13 px; recompute every displayed difference from the dates and amounts on the page (a weekday that
    does not match the date is the most common slip).
